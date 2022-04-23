@@ -105,3 +105,35 @@ hr {
 #media-type {
     border: 1px solid black;  
 }
+
+/* Recipe */
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+  }
+  
+  th {
+    border: 2px solid;
+  }
+  
+  td {
+    text-align: center;
+    border: 2px solid;
+    width: 300px;
+  }
+
+  /* Coming Soon*/
+
+  #upcoming {
+    border: 3px double rgb(15, 138, 200);
+    margin: 50px;
+    padding: 25px;
+    width: 60% center;
+    text-align: center;
+  }
+
+  #upcoming li {
+    list-style: none;
+  }
