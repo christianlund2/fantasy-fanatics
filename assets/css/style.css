@@ -63,10 +63,45 @@ h1, h2 {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 #hero-image {
     height: 600px;
     width: 100%;
     background: url(../images/hero-image.jpg) no-repeat center center;
+}
+
+/* Article */
+
+#article {
+    border: 3px double rgb(15, 138, 200);
+    margin: 50px;
+    padding: 25px;
+    width: 75% center;
+    text-align: center;
+}
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+/* Quiz */
+
+#quiz {
+    border: 3px double rgb(15, 138, 200);
+    margin: 50px;
+    padding: 25px;
+    width: 60% center;
+    text-align: center;
+}
+
+#SWrating {
+    border: 1px solid black;
+}
+
+#media-type {
+    border: 1px solid black;  
 }
