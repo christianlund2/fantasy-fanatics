@@ -76,9 +76,8 @@ h1, h2 {
 
 #article {
     border: 3px double rgb(15, 138, 200);
-    margin: 50px;
-    padding: 25px;
-    width: 75% center;
+    margin: 50px 150px;
+    padding: 25px 150px;
     text-align: center;
 }
 
@@ -92,9 +91,8 @@ hr {
 
 #quiz {
     border: 3px double rgb(15, 138, 200);
-    margin: 50px;
+    margin: 50px 150px;
     padding: 25px;
-    width: 60% center;
     text-align: center;
 }
 
@@ -115,12 +113,12 @@ table {
   }
   
   th {
-    border: 2px solid;
+    border:  3px double rgb(15, 138, 200);
   }
   
   td {
     text-align: center;
-    border: 2px solid;
+    border:  3px double rgb(15, 138, 200);
     width: 300px;
   }
 
@@ -128,9 +126,8 @@ table {
 
   #upcoming {
     border: 3px double rgb(15, 138, 200);
-    margin: 50px;
+    margin: 50px 150px;
     padding: 25px;
-    width: 60% center;
     text-align: center;
   }
 
@@ -157,3 +154,23 @@ table {
        padding: 5%;
        color: #3a3a3a;
    }
+
+   /* For Medium screen sizes from 950px wide and down */
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 25px;
+        margin-bottom: 25px;
+ 
+    }
+
+
+
+    #article {
+        width: 90%;
+        /* height: 1200px; */
+        margin: 0 auto;
+    }
+}
+   
