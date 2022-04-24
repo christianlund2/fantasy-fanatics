@@ -132,7 +132,7 @@ hr {
 #quiz-button {
     background-color: rgb(15, 138, 200);
     border: 1px solid black;
-    color: white;
+    color: #3a3a3a;
     text-align: center;
     border-radius: 8px;
     padding: 5px;
@@ -193,25 +193,6 @@ table {
    
 /* Media queries */
 
-/* For small screen sizes 800px and down */
-@media screen and (max-width: 800px) {
-    body{
-        margin: 0 auto;
-    }
-
-    #quiz {
-        margin: 50px;
-    }
-
-    #upcoming {
-        margin: 50px;
-    }
-
-    #upcoming li {
-        list-style: circle;
-      }
-}
-
 /* For Medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
     #menu {
@@ -231,4 +212,23 @@ table {
         border: 1px solid rgb(15, 138, 200);
         padding: 25px;
     }
+}
+
+/* For small screen sizes 800px and down */
+@media screen and (max-width: 800px) {
+    body{
+        margin: 0 auto;
+    }
+
+    #quiz {
+        margin: 50px;
+    }
+
+    #upcoming {
+        margin: 50px;
+    }
+
+    #upcoming li {
+        list-style: circle;
+      }
 }
