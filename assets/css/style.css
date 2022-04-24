@@ -125,18 +125,19 @@ hr {
     border: 1px solid black;
 }
 
-#media-type {
+#media {
     border: 1px solid black;  
 }
 
 #quiz-button {
     background-color: rgb(15, 138, 200);
     border: 1px solid black;
-    color: #3a3a3a;
+    color: white;
+    font-weight: bold;
     text-align: center;
     border-radius: 8px;
     padding: 5px;
-    margin-top: 3px;
+    margin-top: 18px;
 }
 
 /* Recipe */
