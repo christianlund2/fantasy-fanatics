@@ -151,6 +151,10 @@ table {
   
   th {
     border:  3px double rgb(15, 138, 200);
+    font-family: cantarell, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #252525;
   }
   
   td {

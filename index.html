@@ -32,7 +32,7 @@
     </header>
     <section id="hero-outer">
         <!-- Image taken from https://pixabay.com/illustrations/buckled-book-book-fantasy-photoshop-2180047/-->
-        <div id="hero-image" alt="Image of a floating book with a river flowing out of the pages"></div>
+        <div id="hero-image" aria-description="Image of a floating book with a river flowing out of the pages"></div>
         <div id="cover-text">
             <h2>Your one-stop-shop for all things wonderous!</h2>
         </div>
@@ -68,12 +68,12 @@
     <section id="quiz">
         <h2>The No-Wrong-Answer quiz!</h2>
         <form action="#" method="POST">
-            <section>
+            <div>
                 <label for="Star-wars-rating">On a scale of 1-10, how would you rate the Star Wars Universe?</label>
                 <input type="number" name="rating" id="Star-wars-rating" min="10" max="10">
-            </section>
+            </div>
             <hr>
-            <section>
+            <div>
                 <span>Which Lord of the Rings Movie should we watch?</span><br>
                 <input type="checkbox" name="option1" id="hobbit" value="hobbit">
                 <label for="hobbit">The Hobbit</label><br>
@@ -85,9 +85,9 @@
                 <label for="king">The Return of the King</label><br>
                 <input type="checkbox" name="option5" id="buckle-up" value="buckle-up" checked>
                 <label for="buckle-up">All of them!</label><br>
-            </section>
+            </div>
             <hr>
-            <section>
+            <div>
                 <label for="media">How do you prefer to enjoy these types of stories?</label>
                 <select name="media" id="media">
                     <option value="movies">Movies</option>
@@ -95,9 +95,9 @@
                     <option value="books" selected>Books</option>
                     <option value="puppets">Puppet Show!</option>
                 </select>
-            </section>
+            </div>
             <hr>
-            <section>
+            <div>
                 <span>Which Hogwarts house would you be in?</span>
                 <br>
                 <input type="radio" name="house" id="Gryffindor" value="Gryffindor">
@@ -108,7 +108,7 @@
                 <label for="Hufflepuff">Hufflepuff</label><br>
                 <input type="radio" name="house" id="Slytherin" value="Slytherin">
                 <label for="Slytherin">Slytherin</label>
-            </section>
+            </div>
             <hr>
             <input type="submit" value="Send it!" id="quiz-button" aria-label="Submit button">
         </form>
@@ -117,22 +117,13 @@
     <!-- Recipe -->
     <section id="recipe">
         <table>
-            <thead>
             <tr>
-                <th colspan="2">
-                <h2>LOTR Movie Marathon Feast Schedule</h2>
-                </th>
+                <th colspan="2">LOTR Movie Marathon Feast Schedule</th>
             </tr>
             <tr>
-                <th>
-                <h3>Time</h3>
-                </th>
-                <th>
-                <h3>Menu</h3>
-                </th>
+                <th>Time</th>
+                <th>Menu</th>
             </tr>
-            </thead>
-            <tbody>
             <tr>
                 <td class="left"><h3>8 AM</h3></td>
                 <td><h3>Breakfast in the shire</h3>
@@ -181,7 +172,6 @@
                 <p>Mount Doom lava cakes</p>
                 </td>
             </tr>
-            </tbody>
         </table>
     </section>
 
