@@ -14,7 +14,7 @@ body {
 
 /* headings and logo */
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: cantarell, sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
@@ -66,6 +66,26 @@ h1, h2 {
     position: relative;
 }
 
+#cover-text, #cover-text h3 {
+    color: white;
+    font-weight: bold;
+}
+
+#cover-text {
+    font-size: 110%;
+    font-family: cantarell, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 250px;
+    margin: 0px auto;
+    padding: 0px 20px;
+    background-color: rgba(15, 138, 200, .7);
+
+    bottom: 50px;
+    right: 300px;
+    position: absolute;
+}
+
 #hero-image {
     height: 600px;
     width: 100%;
@@ -77,7 +97,7 @@ h1, h2 {
 #article {
     border: 3px double rgb(15, 138, 200);
     margin: 50px 150px;
-    padding: 25px 150px;
+    padding: 25px 100px;
     text-align: center;
 }
 
@@ -110,6 +130,7 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right:auto;
+    margin: 50px, 150px;
   }
   
   th {
@@ -162,15 +183,17 @@ table {
         float: left;
         margin-left: 25px;
         margin-bottom: 25px;
- 
     }
 
-
+    #cover-text {
+        left:0;
+    }
 
     #article {
         width: 90%;
-        /* height: 1200px; */
         margin: 0 auto;
+        border: 1px solid rgb(15, 138, 200);
+        padding: 25px;
     }
 }
    
