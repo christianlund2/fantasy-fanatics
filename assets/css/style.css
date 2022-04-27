@@ -27,15 +27,20 @@ h1, h2, h3, h4 {
     margin-left: 10px;
 }
 
+#fixed-header {
+    line-height: 60px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+
 /* navigation links*/
 
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
-}
-
-#menu, #logo {
-    line-height: 60px;
 }
 
 #menu li {
@@ -46,15 +51,16 @@ h1, h2, h3, h4 {
 
 #menu a {
     text-decoration: none;
-    color: inherit;
+    color: #252525;
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
+    font-weight: bold;
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /* hero image */
@@ -64,6 +70,7 @@ h1, h2, h3, h4 {
     width: 100%;
     overflow: hidden;
     position: relative;
+    z-index: 1;
 }
 
 #cover-text, #cover-text h2 {
@@ -76,14 +83,12 @@ h1, h2, h3, h4 {
     font-family: cantarell, sans-serif;
     letter-spacing: 2px;
     text-align: center;
-    width: 250px;
-    margin: 0px auto;
+    width: 50%;
     padding: 0px 20px;
-    background-color: rgba(15, 138, 200, .7);
-
-    bottom: 50px;
+    bottom: 30px;
     right: 300px;
     position: absolute;
+    background-color: rgba(15, 138, 200, .7);
 }
 
 #hero-image {
@@ -101,15 +106,11 @@ h1, h2, h3, h4 {
     text-align: center;
 }
 
-h4 {
-    font-weight: 500;
-}
-
 hr {
     border-top: 1px solid #3a3a3a;
     margin-left: 100px;
     margin-right: 100px;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 /* Quiz */
@@ -142,12 +143,18 @@ hr {
 
 /* Recipe */
 
+#recipe {
+    margin: 50px 150px;
+    border: 3px double rgb(15, 138, 200);
+    padding: 25px 100px;
+}
+
 table {
     text-align: center;
     margin-left: auto;
-    margin-right:auto; 
-   /* margin: 50px 150px;*/
+    margin-right: auto;
   }
+
   #table-title {
     font-weight: bold;
   }
@@ -171,7 +178,7 @@ table {
   #upcoming {
     border: 3px double rgb(15, 138, 200);
     margin: 50px 150px;
-    padding: 25px;
+    padding: 25px 100px;
     text-align: center;
   }
 
@@ -199,6 +206,10 @@ table {
        color: #3a3a3a;
    }
    
+   #social-networks i:hover {
+       filter: invert(100%);
+   }
+   
 /* Media queries */
 
 /* For Medium screen sizes from 950px wide and down */
@@ -220,20 +231,33 @@ table {
         border: 1px solid rgb(15, 138, 200);
         padding: 25px;
     }
+
+    #quiz{
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid rgb(15, 138, 200);
+        padding: 25px;
+    }
+
+    #recipe {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid rgb(15, 138, 200);
+        padding: 25px;
+    }
+
+    #upcoming {
+        width: 90%;
+        margin: 0 auto;
+        border: 1px solid rgb(15, 138, 200);
+        padding: 25px;
+    }
 }
 
 /* For small screen sizes 800px and down */
 @media screen and (max-width: 800px) {
     body{
         margin: 0 auto;
-    }
-
-    #quiz {
-        margin: 50px;
-    }
-
-    #upcoming {
-        margin: 50px;
     }
 
     #upcoming li {
