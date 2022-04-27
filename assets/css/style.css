@@ -21,12 +21,7 @@ h1, h2, h3, h4 {
     color: #252525;
 }
 
-#logo {
-    float: left;
-    font-size: 200%;
-    margin-left: 10px;
-}
-
+/* Fixed header z-index sourced from https://stackoverflow.com/questions/16315125/position-absolute-has-greater-z-index-than-position-fixed*/
 #fixed-header {
     line-height: 60px;
     position: fixed;
@@ -37,7 +32,9 @@ h1, h2, h3, h4 {
 }
 
 /* navigation links*/
-
+/* General layout sourced from "Love Running" */
+/* Header https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/*/
+/* Navigation https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/*/
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
@@ -63,8 +60,15 @@ h1, h2, h3, h4 {
     font-style: italic;
 }
 
-/* hero image */
+#logo {
+    float: left;
+    font-size: 200%;
+    margin-left: 10px;
+}
 
+/* hero image */
+/* General styling for hero image and text overlay sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/*/
+/* Fixed header z-index sourced from https://stackoverflow.com/questions/16315125/position-absolute-has-greater-z-index-than-position-fixed*/
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -187,6 +191,7 @@ table {
   }
 
 /* Footer */
+/* Social Media link layout sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/*/
    footer {
        height: 150px;
    }
@@ -206,12 +211,13 @@ table {
        color: #3a3a3a;
    }
    
+   /* Social Media color invert sourced from https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css*/
    #social-networks i:hover {
        filter: invert(100%);
    }
-   
-/* Media queries */
 
+/* Media queries */
+/* Sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/d48e6af85eb84191bebd57ece8b6fb73/*/
 /* For Medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
     #menu {
