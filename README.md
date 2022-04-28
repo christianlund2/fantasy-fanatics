@@ -2,7 +2,7 @@
 
 The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date on all the latest news and information on the universes they love. The site includes articles on history and lore, food, fashion, quizzes, polls and all the hottest gossip. With content covering Harry Potter, Lord of the Rings, Star Wars, Doctor Who and more, it appeals to a wide range of fantasy topics. The site is useful for fans to read engaging articles, povide delicious recipes, and contribute a fun, social community for the fantasy-lover in everyone. 
 
-![Responsive Preview](./assets/images/responsive-previews.png)
+![Responsive Preview](./assets/images/responsive-preview.png)
 
 
 ## Features
@@ -64,6 +64,7 @@ Successful quiz submission.
 - A 'See Results' feature for the Quizzes.
 - An online store to purchase fantasy-themed products.
 - A photo carousel in Bootstrap for the featured article. 
+- An 'Archive' section for old articles.
 
 ## Testing
 - This project was built in Google Chrome, mostly in GitPod but also some from previous work in CodePen (cited below). It was tested in Microsoft Edge, Firefox and Safari browsers and on mobile phones, laptops and desktop monitors. 
@@ -72,6 +73,14 @@ Successful quiz submission.
 - The links to social media open in a new tab to the correct web address.  
 - Also, when running Lighthouse, the SEO comes back limited due to links not being crawlable. But the links are from the font-awesome script and in JavaScript, which is outside of the current scope of this project.
 - Accessibility needed to be improved on the 'Submit' button on the quiz. This was solved by increasing the font-weight from 'bold' to 800.
+
+- Lighthouse Desktop
+
+![Lighthouse Desktop Image](./assets/images/lighthouse-desktop.png)
+
+- Lighthouse Mobile
+
+![Lighthouse Mobile Image](./assets/images/lighthouse-mobile.png)
 
 ### HTML Errors returned during validator testing: 
 - Line 40 / Removed alt description in the 'div' for the Hero Image.
