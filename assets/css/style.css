@@ -218,7 +218,11 @@ table {
        height: 150px;
    }
 
-   footer h2, h3 {
+   footer > h2 {
+       color: beige;
+   }
+
+   footer > h3 {
        color: beige;
    }
 
