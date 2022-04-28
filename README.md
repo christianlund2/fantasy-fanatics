@@ -1,6 +1,6 @@
 # The Fantasy Fanatics
 
-The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date on all the latest news and information on the universes they love. The site nicludes articles on history and lore, food, fashion, quizzes, polls and all the hottest gossip. With content covering Harry Potter, Lord of the Rings, Star Wars, Doctor Who and more, it appeals to a wide range of fantasy topics. The site is useful for fans to read engaging articles, povide delicious recipes, and contribute a fun, social community for the fantasy-lover in everyone. 
+The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date on all the latest news and information on the universes they love. The site includes articles on history and lore, food, fashion, quizzes, polls and all the hottest gossip. With content covering Harry Potter, Lord of the Rings, Star Wars, Doctor Who and more, it appeals to a wide range of fantasy topics. The site is useful for fans to read engaging articles, povide delicious recipes, and contribute a fun, social community for the fantasy-lover in everyone. 
 
 Screenshots of responsive design go here.
 
@@ -10,7 +10,7 @@ Screenshots of responsive design go here.
 ### Existing Features
 1 Navigation Bar 
 - Fully responsive, links to the Home Page, Featured Articles and Contact sections of the website. 
-- Allows the user to easily jump between sections.
+- Fixed header allows the user to easily jump between sections.
 
 Navbar.pic
 
@@ -51,7 +51,7 @@ Upcoming.pic
 
 
 7 Contact / Social Media
-- The footer includes links to various social media pages where additional content is hosted. 
+- The footer includes a contact email and links to various social media pages where additional content and communities are hosted. 
 - It encourages the user to connect via other outlets, depending on their content preference and type.
 
 Footer.pic
@@ -59,15 +59,17 @@ Footer.pic
 
 ### Features Left to Implement
 - A 'See Results' feature for the Quizzes, as well as a proper location for the 'action' in the form.
-- An online store to purchase fantasy-themed goods.
-- A carousel in Bootstrap for the featured article. 
+- An online store to purchase fantasy-themed products.
+- A photo carousel in Bootstrap for the featured article. 
 
 ## Testing
-- This project was built in Google Chrome, mostly in GitPod but some from previous work in CodePen. It was tested in Microsoft Edge, Firefox and Safari browsers and on mobile phones, laptops and desktop monitors. 
-- The NAV elements all work as intended, jumping to the correct section of the webpge.
+- This project was built in Google Chrome, mostly in GitPod but also some from previous work in CodePen (cited below). It was tested in Microsoft Edge, Firefox and Safari browsers and on mobile phones, laptops and desktop monitors. 
+- The fixed header and NAV elements all work as intended, jumping to the correct section of the webpge.
 - The quiz interactions all work (10/10 for Star Wars *is* the correct answer) Although at the time of this publishing there is not a functional back-end destination for the 'action' attribute to send the quiz results to or 'fetch' other results from. 
 - The links to social media open in a new tab to the correct web address. 
 - One consideration I did not anticipate was viewing on ultra-wide PC monitors. 
+- Also, when running Lighthouse, the SEO comes back limited due to links not being crawlable. But the links are from the font-awesome script and in JavaScript, which is outside of the current scope of this project.
+- Accessibility needed to be improved on the 'Submit' button on the quiz. This was solved by increasing the font-weight from 'bold' to 800.
 
 ### HTML Errors returned during validator testing: 
 - Line 40 / Removed alt description in the 'div' for the Hero Image.
@@ -85,7 +87,7 @@ Footer.pic
 - No errors were returned when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchristianlund2.github.io%2Ffantasy-fanatics%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en).
 
 ### Unfixed Bugs
-- No unfixed bugs remain. 
+- No unfixed bugs remain.
 
 ## Deployment
 1 This site was deployed to GitHub pages. 
