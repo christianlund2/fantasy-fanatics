@@ -145,6 +145,18 @@ hr {
     margin-top: 18px;
 }
 
+/* Successful quiz submission */
+#thanks {
+    font-size: 110%;
+    font-family: cantarell, sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(15, 138, 200, .7);
+    color: white;
+    margin: 10% auto;
+}
+
 /* Recipe */
 
 #recipe {
