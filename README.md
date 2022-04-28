@@ -100,20 +100,18 @@ The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date o
 
 ## Credits
 ### Content
-The entirety of the "Featured Article", "Quiz" and "Recipe" sections were sourced from my own previous material, hosted at: https://codepen.io/TheHungryStork/pen/QWdXbvq
+1 The entirety of the "Featured Article", "Quiz" and "Recipe" sections were sourced from my own previous material, hosted at: https://codepen.io/TheHungryStork/pen/QWdXbvq
 
-self.credit.pic
-
-General styling for the following sections of code were sourced from the "Love Running" project:
+2 General styling for the following sections of code were sourced from the "Love Running" project:
 - Header : https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/
 - Navigation Bar :  https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/
 - Hero Image and Text Overlay : https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/
 - Social Media Link Layout : https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/
 - Media Queries : https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/d48e6af85eb84191bebd57ece8b6fb73/
 
-Creating a fixed header using z-index : https://stackoverflow.com/questions/16315125/position-absolute-has-greater-z-index-than-position-fixed
+3 Creating a fixed header using z-index : https://stackoverflow.com/questions/16315125/position-absolute-has-greater-z-index-than-position-fixed
 
-Inverting the colors for Social Media Pseudo Hover Class : https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css
+4 Inverting the colors for Social Media Pseudo Hover Class : https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css
 
 ### Media
-- Hero Image sourced from : https://pixabay.com/illustrations/buckled-book-book-fantasy-photoshop-2180047/
+1 Hero Image sourced from : https://pixabay.com/illustrations/buckled-book-book-fantasy-photoshop-2180047/
