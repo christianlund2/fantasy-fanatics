@@ -2,7 +2,7 @@
 
 The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date on all the latest news and information on the universes they love. The site includes articles on history and lore, food, fashion, quizzes, polls and all the hottest gossip. With content covering Harry Potter, Lord of the Rings, Star Wars, Doctor Who and more, it appeals to a wide range of fantasy topics. The site is useful for fans to read engaging articles, povide delicious recipes, and contribute a fun, social community for the fantasy-lover in everyone. 
 
-Screenshots of responsive design go here.
+![Responsive Preview](./assets/images/responsive-previews.png)
 
 
 ## Features
@@ -12,20 +12,20 @@ Screenshots of responsive design go here.
 - Fully responsive, links to the Home Page, Featured Articles and Contact sections of the website. 
 - Fixed header allows the user to easily jump between sections.
 
-Navbar.pic
+![Header and Navigation Image](./assets/images/header-and-navigation-image.png)
 
 
 2 Landing / Hero Image
 - The main image is of a fantasy scene to grab the users attention and convey a general sense of awe. 
 
-Hero.pic
+![Landing/Hero Image](./assets/images/landing-hero-image.png)
 
 
 3 Featured Article
 - The first content the reader encounters is a humorous article comparing the styles of two wizards. 
 - The entertainment value will draw the user further down the page to explore additional featured content. 
 
-Article.pic
+![Featured Article Image](./assets/images/featured-article-image.png)
 
 
 4 Quiz
@@ -33,28 +33,28 @@ Article.pic
 - The quiz gives users a voice in the fandom they love, media they like and upcoming releases they are excited for.
 - This section will be updated as the featured content is updated, as well as with new releases in fantasy universes.
 
-Quiz.pic
+![Quiz Image](./assets/images/quiz-image.png)
 
 
 5 Recipe
 - The recipe section features a movie marathon feast to follow along with, giving menu items and times to serve. (Original Trilogy only, sorry Hobbit fans).
 - This is a fun and interesting idea to supplement a popular movie trilogy to watch. The foods call to the types of food from the films, providing a sense of connection.
 
-Recipe.pic
+![Recipe Feast Image](./assets/images/recipe-feast-image.png)
 
 
 6 Upcoming content
 - This section gives a brief introduction to upcoming featured content. 
 - As the user makes their way down the page, this is meant to pique the users interest to return for the latest content.
 
-Upcoming.pic
+![Upcoming Image](./assets/images/upcoming-image.png)
 
 
 7 Contact / Social Media
 - The footer includes a contact email and links to various social media pages where additional content and communities are hosted. 
 - It encourages the user to connect via other outlets, depending on their content preference and type.
 
-Footer.pic
+![Footer and Social Media / Contact Image](./assets/images/footer-and-socials-contact-image.png)
 
 
 ### Features Left to Implement
