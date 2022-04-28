@@ -230,8 +230,24 @@ table {
 
 /* Media queries */
 /* Sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/d48e6af85eb84191bebd57ece8b6fb73/*/
-/* For Medium screen sizes from 950px wide and down */
 
+/* For Extra Large screen sizes from 1920px wide and down */
+@media screen and (max-width: 1920px) {
+    #cover-text {
+        width:40%;
+        right: 550px;
+    }
+}
+
+/* For Large screen sizes from 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #cover-text {
+        width:40%;
+        right: 450px;
+    }
+}
+
+/* For Medium screen sizes from 950px wide and down */
 @media screen and (max-width: 950px) {
     #menu {
         clear: left;
@@ -282,4 +298,19 @@ table {
     #upcoming li {
         list-style: circle;
       }
+}
+
+/* For small screen sizes 480px and down */
+@media screen and (max-width: 480px) {
+    body{
+        margin: 0 auto;
+    }
+
+    #cover-text {
+        font-size: smaller;
+    }
+
+    footer {
+        font-size: x-small;
+    }
 }
