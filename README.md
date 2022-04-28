@@ -35,6 +35,9 @@ The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date o
 
 ![Quiz Image](./assets/images/quiz-image.png)
 
+Successful quiz submission. 
+![Successful Quiz Submission Image](./assets/images/successful-quiz-image.png)
+
 
 5 Recipe
 - The recipe section features a movie marathon feast to follow along with, giving menu items and times to serve. (Original Trilogy only, sorry Hobbit fans).
@@ -58,16 +61,15 @@ The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date o
 
 
 ### Features Left to Implement
-- A 'See Results' feature for the Quizzes, as well as a proper location for the 'action' in the form.
+- A 'See Results' feature for the Quizzes.
 - An online store to purchase fantasy-themed products.
 - A photo carousel in Bootstrap for the featured article. 
 
 ## Testing
 - This project was built in Google Chrome, mostly in GitPod but also some from previous work in CodePen (cited below). It was tested in Microsoft Edge, Firefox and Safari browsers and on mobile phones, laptops and desktop monitors. 
 - The fixed header and NAV elements all work as intended, jumping to the correct section of the webpge.
-- The quiz interactions all work (10/10 for Star Wars *is* the correct answer) Although at the time of this publishing there is not a functional back-end destination for the 'action' attribute to send the quiz results to or 'fetch' other results from. 
-- The links to social media open in a new tab to the correct web address. 
-- One consideration I did not anticipate was viewing on ultra-wide PC monitors. 
+- The quiz interactions all work (10/10 for Star Wars *is* the correct answer).
+- The links to social media open in a new tab to the correct web address.  
 - Also, when running Lighthouse, the SEO comes back limited due to links not being crawlable. But the links are from the font-awesome script and in JavaScript, which is outside of the current scope of this project.
 - Accessibility needed to be improved on the 'Submit' button on the quiz. This was solved by increasing the font-weight from 'bold' to 800.
 
@@ -112,6 +114,8 @@ The Fantasy Fanatics is a site that keeps fans of the fantasy genre up to date o
 3 Creating a fixed header using z-index : https://stackoverflow.com/questions/16315125/position-absolute-has-greater-z-index-than-position-fixed
 
 4 Inverting the colors for Social Media Pseudo Hover Class : https://stackoverflow.com/questions/17741629/how-can-i-invert-color-using-css
+
+5 - Linking to a DIV on another page : https://stackoverflow.com/questions/20565644/how-to-link-to-a-div-on-another-page
 
 ### Media
 1 Hero Image sourced from : https://pixabay.com/illustrations/buckled-book-book-fantasy-photoshop-2180047/
