@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell:ital@1&family=Nunito:wght@400&display=swap');
 
+div#map {min-height: 360px;}
+
 * {
     margin: 0;
     padding: 0;
@@ -178,29 +180,29 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  #table-title {
+#table-title {
     font-weight: bold;
-  }
+}
 
-  th {
+th {
     border:  3px double rgb(15, 138, 200);
     font-family: cantarell, sans-serif;
     font-weight: 400;
     letter-spacing: 2px;
     color: #252525;
-  }
+}
   
-  td {
+td {
     text-align: center;
     border:  3px double rgb(15, 138, 200);
     width: 300px;
-  }
+}
 
 /* Coming Soon*/
 
-  #upcoming {
+  #upcoming, #hangouts {
     border: 3px double rgb(15, 138, 200);
     margin: 50px 150px;
     padding: 25px 100px;
@@ -229,6 +231,7 @@ table {
    #social-networks {
        text-align: center;
        color: beige;
+       margin-top: 25px;
    }
 
    #social-networks li {
@@ -247,9 +250,11 @@ table {
        filter: invert(100%);
    }
 
-/* Media queries */
-/* Sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/d48e6af85eb84191bebd57ece8b6fb73/*/
+#map {
+    margin: 50px, 150px;
+}
 
+/* Media queries */
 /* For Extra Large screen sizes from 1920px wide and down */
 @media screen and (max-width: 1920px) {
     #cover-text {

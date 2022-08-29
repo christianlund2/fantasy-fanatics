@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fantasy Fanatics social club for the fantasy genre">
     <meta name="keywords" content="fantasy, social club, harry potter, star wars, lord of the rings">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Fantasy Fanatics</title>
 </head>
 <body>
     <!-- Header and Navigation -->
-    <!-- Header and Navigation general styling sourced from "Love Running"-->
-    <!-- Header https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/-->
-    <!-- Navigation https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/637be1a2e3b84b25aa33f3ab4d98603c/-->
-
+    
     <header id="fixed-header">
         <a href="index.html">
             <h1 id="logo">The Fantasy Fanatics</h1>
@@ -34,7 +31,7 @@
             </ul>
         </nav>
     </header>
-    <!-- Hero Image and Text Overlay sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/6fd29d155c3b42248ff57bae32978a4b/-->
+    <!-- Hero Image and Text Overlay -->
     <section id="hero-outer">
         <!-- Image taken from https://pixabay.com/illustrations/buckled-book-book-fantasy-photoshop-2180047/-->
         <div id="hero-image"></div>
@@ -43,7 +40,6 @@
         </div>
     </section>
 
-    <!-- The entirety of the "Featured Article", "Quiz" and "Recipe" sections were sourced from my own previous material, hosted at: https://codepen.io/TheHungryStork/pen/QWdXbvq -->
     <!-- Featured Article -->
     <section id="featured">
         <h2>Gandalf vs Dumbledore: A Style Guide</h2>
@@ -121,7 +117,6 @@
     </section>
 
     <!-- Recipe -->
-    <!-- Sourced from reddit via https://www.reddit.com/r/lotr/comments/lenfc4/just_completed_an_extended_edition_lotr_movie/-->
     <section id="recipe">
         <table>
             <tr>
@@ -194,12 +189,27 @@
         </ul>
     </section>
 
+    <!-- Map -->
+    <div id="hangouts">
+        <h3>Our hangouts</h3>
+        <p>Check out the pinned locations in the map to see our usual hangout spots in Oslo! We meet once or twice a month to watch movies, 
+            play games and just have fun!  We hope to see you there!
+        </p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10" id="map"></div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Social Media and Footer -->
     <footer id="social-networks">
         <h2>Contact us via our social media pages below!</h2>
         <h3>Email: highcouncil@fantasyfanatics.com</h3>
         <ul>
-            <!-- Social Media link layout sourced from "Love Running" https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/e6d4cda2bc08458ba94d2092be9bad3a/ -->
             <li>
                 <a href="https://twitch.tv" target="_blank" rel="noopener" aria-label="Visit our Twitch page to see live streaming content (opens in a new tab)"><i class="fa-brands fa-twitch"></i></a>
             </li>
@@ -213,7 +223,40 @@
                 <a  href="https://discord.com" target="-blank" rel="noopener" aria-label="Visit our Discord channel to come chat (opens in a new tab)"><i class="fa-brands fa-discord"></i></a>
             </li>
         </ul>
+
     </footer>
+    <script>
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById("map"), {
+                center: {
+                    lat: 59.9260851,
+                    lng: 10.7526624
+                },
+                        
+                zoom: 12
+            });
+
+            var labels = "ABC";
+
+            var locations = [
+                { lat: 59.9137514, lng: 10.741672 },
+                { lat: 59.9223047, lng: 10.7234396 },
+                { lat: 59.9003925, lng: 10.6244644 }
+            ];
+
+            var markers = locations.map(function(location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+
+        }
+    </script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmKgakLtTWC3v7O8XejaSthY1L2ak_Dd0&callback=initMap"></script>
+    <!-- <script src="./assets/js/map.js"></script> -->
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/db2ad12391.js" crossorigin="anonymous"></script>
