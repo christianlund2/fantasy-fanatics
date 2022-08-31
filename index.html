@@ -191,10 +191,21 @@
 
     <!-- Map -->
     <div id="hangout">
-        <h3>Our hangout</h3>
-        <p>Check out the pinned location for our club HQ, Outland in central Oslo! We meet once or twice a month to watch movies, 
+        <h3>Our hangouts</h3>
+        <p>Check out the pinned locations for our usual hangout spots in Oslo! We meet once or twice a month to watch movies, 
             play games and just have fun! We hope to see you there!
         </p>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <ul>
+                    <li>Our flagship HQ - Outland at Stortinget!</li>
+                    <li>Store Stå Pub at Bislett</li>
+                    <li>Kulturhuset at Youngstorget</li>
+                </ul>
+            </div>
+            <div class="col-3"></div>
+        </div>
 
         <div class="container">
             <div class="row">
@@ -225,6 +236,7 @@
         </ul>
 
     </footer>
+
     <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById("map"), {
@@ -236,37 +248,52 @@
                 zoom: 13
             });
 
-            addMarker({
-                coords:{ lat: 59.9136975, lng: 10.7437318 },
-                iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-                content:'<h2>HQ - Outland</h2>'
-            });
-            addMarker({
-                coords:{ lat: 59.9257904, lng: 10.7307351 },
-                content:'<h2>Store Stå Pub</h2>'
-            });
-            addMarker({
-                coords:{ lat: 59.9146236, lng: 10.7506933 },
-                content:'<h2>Kulturhuset</h2>'
-            });
+            // Array of markers
+            var markers = [
+                {
+                    coords:{ lat: 59.9136975, lng: 10.7437318 },
+                    iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+                    content: '<h1>HQ - Outland</h1>'
+                },
+                {
+                    coords:{ lat: 59.9257904, lng: 10.7307351 },
+                    content: '<h1>Store Stå Pub</h1>'
+                },
+                {
+                    coords:{ lat: 59.9146236, lng: 10.7506933 },
+                    content:'<h1>Kulturhuset</h1>'
+                }
+            ];
+
+            //Loop through markers
+            for(var i = 0; i < markers.length; i++){
+                addMarker(markers[i]);
+            }
 
             // Add marker function
-            function addMarker(props) {
-                var marker1 = new google.maps.Marker({
-                position: props.coords,
+            function addMarker(props){
+                var marker = new google.maps.Marker({
+                position:props.coords,
                 map: map,
-                icon: props.iconImage
+                //icon:props.iconImage
                 });
 
-                // if(props.content){
-                //     var infoWindow = new google.maps.InfoWindow({
-                //         content: props.content
-                //     });
+                // Check for custom icon
+                if(props.iconImage){
+                    // set icon image
+                    marker.setIcon(props.iconImage);
+                }
 
-                //     marker.addListener('click', function(){
-                //         infoWindow.open(map, marker),
-                //     });
-                // }
+                // Check for infoWindow
+                if(props.content){
+                    var infoWindow = new google.maps.InfoWindow({
+                    content:props.content
+                    });
+
+                    marker.addListener('mouseover', function(){
+                        infoWindow.open(map, marker);
+                    });
+                }
             }
         }
     </script>
